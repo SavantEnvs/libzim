@@ -1,0 +1,8 @@
+project: savantenvs/libzim
+target: fuzz_archive
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_archive/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_archive
+    libfuzzer: true
